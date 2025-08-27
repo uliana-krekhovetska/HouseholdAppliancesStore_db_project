@@ -139,12 +139,6 @@ This view provides:
 - **Default Read-Only Mode**: Prevents accidental data modifications
 - **Schema-Level Security**: Restricted public access
 
-```sql
--- Manager role setup
-CREATE ROLE manager WITH LOGIN PASSWORD 'secure_password';
-GRANT SELECT ON ALL TABLES IN SCHEMA store_data TO manager;
-```
-
 ### Data Validation
 - Email format validation
 - Price and quantity constraints
